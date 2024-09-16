@@ -58,11 +58,11 @@
 ## 🎮 Demo
 
 Try our demo at [https://demo.ragflow.io](https://demo.ragflow.io).
+
 <div align="center" style="margin-top:20px;margin-bottom:20px;">
 <img src="https://github.com/infiniflow/ragflow/assets/7248/2f6baa3e-1092-4f11-866d-36f6a9d075e5" width="1200"/>
 <img src="https://github.com/infiniflow/ragflow/assets/12318111/b083d173-dadc-4ea9-bdeb-180d7df514eb" width="1200"/>
 </div>
-
 
 ## 🔥 Latest Updates
 
@@ -74,7 +74,6 @@ Try our demo at [https://demo.ragflow.io](https://demo.ragflow.io).
 - 2024-07-08 Supports workflow based on [Graph](./agent/README.md).
 - 2024-06-27 Supports Markdown and Docx in the Q&A parsing method, extracting images from Docx files, extracting tables from Markdown files.
 - 2024-05-23 Supports [RAPTOR](https://arxiv.org/html/2401.18059v1) for better text retrieval.
-
 
 ## 🌟 Key Features
 
@@ -151,14 +150,13 @@ Try our demo at [https://demo.ragflow.io](https://demo.ragflow.io).
 
 3. Build the pre-built Docker images and start up the server:
 
-   > Running the following commands automatically downloads the *dev* version RAGFlow Docker image. To download and run a specified Docker version, update `RAGFLOW_VERSION` in **docker/.env** to the intended version, for example `RAGFLOW_VERSION=v0.11.0`, before running the following commands.
+   > Running the following commands automatically downloads the _dev_ version RAGFlow Docker image. To download and run a specified Docker version, update `RAGFLOW_VERSION` in **docker/.env** to the intended version, for example `RAGFLOW_VERSION=v0.11.0`, before running the following commands.
 
    ```bash
    $ cd ragflow/docker
    $ chmod +x ./entrypoint.sh
    $ docker compose up -d
    ```
-   
 
    > The core image is about 9 GB in size and may take a while to load.
 
@@ -179,11 +177,12 @@ Try our demo at [https://demo.ragflow.io](https://demo.ragflow.io).
                  /____/
 
     * Running on all addresses (0.0.0.0)
-    * Running on http://127.0.0.1:9380
+    * Running on http://192.168.18.105:9380
     * Running on http://x.x.x.x:9380
     INFO:werkzeug:Press CTRL+C to quit
    ```
-   > If you skip this confirmation step and directly log in to RAGFlow, your browser may prompt a `network abnormal` error because, at that moment, your RAGFlow may not be fully initialized.  
+
+   > If you skip this confirmation step and directly log in to RAGFlow, your browser may prompt a `network abnormal` error because, at that moment, your RAGFlow may not be fully initialized.
 
 5. In your web browser, enter the IP address of your server and log in to RAGFlow.
    > With the default settings, you only need to enter `http://IP_OF_YOUR_MACHINE` (**sans** port number) as the default HTTP serving port `80` can be omitted when using the default configurations.
@@ -230,7 +229,7 @@ $ docker compose up -d
 
 To launch the service from source:
 
-1. Clone the repository: 
+1. Clone the repository:
 
    ```bash
    $ git clone https://github.com/infiniflow/ragflow.git
@@ -244,7 +243,7 @@ To launch the service from source:
    $ conda activate ragflow
    $ pip install -r requirements.txt
    ```
-   
+
    ```bash
    # If your CUDA version is higher than 12.0, run the following additional commands:
    $ pip uninstall -y onnxruntime-gpu
@@ -259,7 +258,7 @@ To launch the service from source:
    # Get the ragflow project path:
    $ pwd
    ```
-   
+
    ```bash
    $ cp docker/entrypoint.sh .
    $ vi entrypoint.sh
@@ -280,12 +279,12 @@ To launch the service from source:
 
    ```bash
    $ cd docker
-   $ docker compose -f docker-compose-base.yml up -d 
+   $ docker compose -f docker-compose-base.yml up -d
    ```
 
 5. Check the configuration files, ensuring that:
 
-   - The settings in **docker/.env** match those in **conf/service_conf.yaml**. 
+   - The settings in **docker/.env** match those in **conf/service_conf.yaml**.
    - The IP addresses and ports for related services in **service_conf.yaml** match the local machine IP and ports exposed by the container.
 
 6. Launch the RAGFlow backend service:
@@ -301,8 +300,8 @@ To launch the service from source:
    $ cd web
    $ npm install --registry=https://registry.npmmirror.com --force
    $ vim .umirc.ts
-   # Update proxy.target to http://127.0.0.1:9380
-   $ npm run dev 
+   # Update proxy.target to http://192.168.18.105:9380
+   $ npm run dev
    ```
 
 8. Deploy the frontend service:
