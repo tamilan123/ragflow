@@ -14,7 +14,6 @@ export const useLoginWithGithub = () => {
 
   if (error) {
     message.error(error);
-    console.log("err",error);
     navigate('/login');
     newQueryParameters.delete('error');
     setSearchParams(newQueryParameters);
