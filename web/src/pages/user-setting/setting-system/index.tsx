@@ -61,9 +61,12 @@ const SystemInfo = () => {
                 title={
                   <Flex align="center" gap={10}>
                     {key === 'task_executor' ? (
-                      <img src="/logo.svg" alt="" width={26} />
+                      <img src="/baf-logo.svg" alt="" width={26} />
                     ) : (
-                      <SvgIcon name={IconMap[key as keyof typeof IconMap]} width={26}></SvgIcon>
+                      <SvgIcon
+                        name={IconMap[key as keyof typeof IconMap]}
+                        width={26}
+                      ></SvgIcon>
                     )}
                     <span className={styles.title}>
                       {TitleMap[key as keyof typeof TitleMap]}

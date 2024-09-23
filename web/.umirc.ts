@@ -13,7 +13,7 @@ export default defineConfig({
   esbuildMinifyIIFE: true,
   icons: {},
   hash: true,
-  favicons: ['/logo.svg'],
+  favicons: ['/baf-logo.svg'],
   clickToComponent: {},
   history: {
     type: 'browser',
@@ -30,7 +30,7 @@ export default defineConfig({
   copy: ['src/conf.json'],
   proxy: {
     '/v1': {
-      target: 'http://127.0.0.1:9456/',
+      target: 'http://127.0.0.1:9380/',
       changeOrigin: true,
       ws: true,
       logger: console,

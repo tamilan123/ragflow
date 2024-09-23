@@ -60,8 +60,13 @@ const RagHeader = () => {
       }}
     >
       <Space size={12} onClick={handleLogoClick} className={styles.logoWrapper}>
-        <img src="/logo.svg" alt="" className={styles.appIcon} />
-        <span className={styles.appName}>{appConf.appName}</span>
+        <img
+          src="/baf-logo.svg"
+          alt=""
+          className={styles.appIcon}
+          style={{ width: '100%', maxWidth: '100%' }}
+        />
+        {/* <span className={styles.appName}>{appConf.appName}</span> */}
       </Space>
       <Space size={[0, 8]} wrap>
         <Radio.Group
