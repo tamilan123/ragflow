@@ -147,6 +147,8 @@ export default {
       topK: 'Top-K',
       topKTip: `K块将被送入Rerank型号。`,
       delimiter: `分段标识符`,
+      html4excel: '表格转HTML',
+      html4excelTip: `Excel 是否将被解析为 HTML 表。如果为 FALSE，Excel 中的每一行都将形成一个块。`,
     },
     knowledgeConfiguration: {
       titleDescription: '在这里更新您的知识库详细信息，尤其是解析方法。',
@@ -419,6 +421,9 @@ export default {
       ttsTip: '是否用语音转换播放语音，请先在设置里面选择TTS（语音转换模型）。',
       relatedQuestion: '相关问题',
       answerTitle: '智能回答',
+      multiTurn: '多轮对话优化',
+      multiTurnTip:
+        '在多轮对话的中，对去知识库查询的问题进行优化。会调用大模型额外消耗token。',
     },
     setting: {
       profile: '概要',
