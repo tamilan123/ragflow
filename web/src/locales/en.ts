@@ -44,9 +44,10 @@ export default {
       nicknamePlaceholder: 'Please input nickname',
       register: 'Create an account',
       continue: 'Continue',
-      title: 'Start building your smart assistants.',
+      title: 'Start Creating Your Intelligent Assistants Effortlessly.',
+      product: 'BAF agent',
       description:
-        'Sign up for free to explore top RAG technology. Create knowledge bases and AIs to empower your business.',
+        'Signup for free to unlock RAG technology. Build AI and knowledge solutions to elevate your business.',
       review: 'from 500+ reviews',
     },
     header: {

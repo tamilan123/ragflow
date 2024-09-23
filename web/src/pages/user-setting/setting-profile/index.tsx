@@ -16,13 +16,11 @@ import {
   Upload,
   UploadFile,
 } from 'antd';
-import camelCase from 'lodash/camelCase';
 import { useEffect } from 'react';
 import SettingTitle from '../components/setting-title';
 import { TimezoneList } from '../constants';
 import { useValidateSubmittable } from '../hooks';
 
-import { LanguageList } from '@/constants/common';
 import { useTranslate } from '@/hooks/common-hooks';
 import { useChangeLanguage } from '@/hooks/logic-hooks';
 import parentStyles from '../index.less';
@@ -127,8 +125,8 @@ const UserSettingProfile = () => {
               </button>
             </Upload>
           </Form.Item>
-          <Divider />
-          <Form.Item<FieldType>
+          {/* <Divider /> */}
+          {/* <Form.Item<FieldType>
             label={t('colorSchema')}
             name="color_schema"
             rules={[{ required: true, message: t('colorSchemaMessage') }]}
@@ -137,9 +135,9 @@ const UserSettingProfile = () => {
               <Option value="Bright">{t('bright')}</Option>
               <Option value="Dark">{t('dark')}</Option>
             </Select>
-          </Form.Item>
-          <Divider />
-          <Form.Item<FieldType>
+          </Form.Item> */}
+          {/* <Divider /> */}
+          {/* <Form.Item<FieldType>
             label={t('language', { keyPrefix: 'common' })}
             name="language"
             rules={[
@@ -159,7 +157,7 @@ const UserSettingProfile = () => {
                 </Option>
               ))}
             </Select>
-          </Form.Item>
+          </Form.Item> */}
           <Divider />
           <Form.Item<FieldType>
             label={t('timezone')}
