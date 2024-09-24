@@ -14,7 +14,7 @@ const App: React.FC = () => {
 
   return (
     <Avatar
-      size={32}
+      size={40}
       onClick={toSetting}
       className={styles.clickAvailable}
       src={userInfo.avatar ?? '/profile.png'}

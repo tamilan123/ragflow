@@ -460,7 +460,7 @@ class User(DataBaseModel, UserMixin):
         max_length=64,
         null=True,
         help_text="Timezone",
-        default="UTC+8\tAsia/Shanghai",
+        default="UTC+5:30\tAsia/Kolkata",
         index=True)
     last_login_time = DateTimeField(null=True, index=True)
     is_authenticated = CharField(max_length=1, null=False, default="1", index=True)
