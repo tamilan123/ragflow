@@ -15,11 +15,10 @@ import { IRegenerateMessage, IRemoveMessageById } from '@/hooks/logic-hooks';
 import { IMessage } from '@/pages/chat/interface';
 import MarkdownContent from '@/pages/chat/markdown-content';
 import { getExtension, isImage } from '@/utils/document-util';
-import { Avatar, Button, Flex, List, Space, Typography } from 'antd';
+import { Avatar, Button, Flex, List, Typography } from 'antd';
 import FileIcon from '../file-icon';
 import IndentedTreeModal from '../indented-tree/modal';
 import NewDocumentLink from '../new-document-link';
-import { AssistantGroupButton, UserGroupButton } from './group-button';
 import styles from './index.less';
 
 const { Text } = Typography;
@@ -108,7 +107,7 @@ const MessageItem = ({
             <AssistantIcon></AssistantIcon>
           )}
           <Flex vertical gap={8} flex={1}>
-            <Space>
+            {/* <Space>
               {isAssistant ? (
                 index !== 0 && (
                   <AssistantGroupButton
@@ -131,8 +130,8 @@ const MessageItem = ({
                 ></UserGroupButton>
               )}
 
-              {/* <b>{isAssistant ? '' : nickname}</b> */}
-            </Space>
+              <b>{isAssistant ? '' : nickname}</b>
+            </Space> */}
             <div
               className={
                 isAssistant ? styles.messageText : styles.messageUserText
