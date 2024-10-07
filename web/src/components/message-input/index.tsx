@@ -35,6 +35,7 @@ import {
   useRef,
   useState,
 } from 'react';
+import { AiOutlineSend } from 'react-icons/ai';
 import FileIcon from '../file-icon';
 import SvgIcon from '../svg-icon';
 import styles from './index.less';
@@ -240,13 +241,15 @@ const MessageInput = ({
                 ></Button>
               </Upload>
             )}
+
             <Button
               type="primary"
               onClick={handlePressEnter}
               loading={sendLoading}
               disabled={sendDisabled || isUploadingFile}
             >
-              {t('send')}
+              {/* {t('send')} */}
+              <AiOutlineSend />
             </Button>
           </Space>
         }
