@@ -248,7 +248,6 @@ const MessageInput = ({
               loading={sendLoading}
               disabled={sendDisabled || isUploadingFile}
             >
-              {/* {t('send')} */}
               <AiOutlineSend />
             </Button>
           </Space>
