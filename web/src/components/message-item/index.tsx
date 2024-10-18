@@ -1,4 +1,3 @@
-import { ReactComponent as AssistantIcon } from '@/assets/svg/assistant.svg';
 import { MessageType } from '@/constants/chat';
 import { useSetModalState } from '@/hooks/common-hooks';
 import { useSelectFileThumbnails } from '@/hooks/knowledge-hooks';
@@ -6,6 +5,7 @@ import { IReference } from '@/interfaces/database/chat';
 import { IChunk } from '@/interfaces/database/knowledge';
 import classNames from 'classnames';
 import { memo, useCallback, useEffect, useMemo, useState } from 'react';
+import { FcAssistant } from 'react-icons/fc';
 
 import {
   useFetchDocumentInfosByIds,
@@ -104,7 +104,8 @@ const MessageItem = ({
           {item.role === MessageType.User ? (
             <Avatar size={40} src={avatar ?? '/profile.png'} />
           ) : (
-            <AssistantIcon></AssistantIcon>
+            // <AssistantIcon></AssistantIcon>
+            <FcAssistant size={40} />
           )}
           <Flex vertical gap={8} flex={1}>
             {/* <Space>

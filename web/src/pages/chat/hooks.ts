@@ -425,7 +425,6 @@ export const useSendNextMessage = () => {
 
   useEffect(() => {
     //  #1289
-    console.log('🚀 ~ useEffect ~ answer:', answer, done);
     if (
       answer.answer &&
       (answer?.conversationId === conversationId ||
